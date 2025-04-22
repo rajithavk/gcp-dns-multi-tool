@@ -1,0 +1,21 @@
+zone: example-zone
+projects:
+  - example-project-dev
+  - example-project-qa
+  - example-project-staging
+dns_records:
+  - name: s1._domainkey.example.com.
+    type: CNAME
+    ttl: 300
+    rrdatas:
+      - s1.domainkey.example.sendgrid.net.
+  - name: s2._domainkey.example.com.
+    type: CNAME
+    ttl: 300
+    rrdatas:
+      - s2.domainkey.example.sendgrid.net.
+  - name: em3315.example.com.
+    type: CNAME
+    ttl: 300
+    rrdatas:
+      - example.sendgrid.net.
